@@ -2,3 +2,26 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.head-content{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#menu-container-full{
+    width: 40%;
+    justify-content: end;
+}
+
+.menu-container-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container-item > a{
+    text-decoration: none;
+}
