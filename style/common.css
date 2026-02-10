@@ -3,6 +3,12 @@ body{
     padding: 0;
 }
 
+h1{
+    font-family: var(--bn);
+    font-weight: 700;
+    color: var(--white);
+}
+
 .head-content{
     display: flex;
     justify-content: space-between;
@@ -20,6 +26,10 @@ body{
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+.menu-container-item{
+    color: var(--white);
 }
 
 .menu-container-item > a{
