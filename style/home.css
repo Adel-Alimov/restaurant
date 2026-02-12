@@ -34,11 +34,71 @@
     font-weight: 400;
 }
 
-/* ================GALLERY==========
-.gallery{
-    min-height: 500px;
+/*================GALLERY==========*/
+#gallery{
+    display: flex;
+    width: 100%;
+    margin: 0;
 }
 
 .rest-gallery{
     display: flex;
-} */
+}
+
+.left-gallery{
+    width: 50%;
+}
+
+.right-gallery{
+    width: 50%;
+    max-width: 505px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.title-gallery > h1{
+    color: #000000!important;
+}
+
+.arrow:not(:last-child){
+    margin-right: 15px;
+}
+
+#right-arrow{
+    transform: scale(-1, 1);
+}
+
+#rewiews{
+    display: flex;
+}
+
+.rewiews-text{
+    position: relative;
+}
+
+.rewiews-text{
+    margin-top: 50px;
+}
+
+.item-rewiew{
+    display: flex;
+    margin-left: 50px;
+}
+
+#big-left-arrow{
+    transform: scale(-1, 1);
+}
+
+.rewiew{
+    background-color: #fff;
+}
+
+.rewiew:not(:last-child){
+    margin-right: 20px;
+}
+
+.rewiew-left > img{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+}

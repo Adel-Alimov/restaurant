@@ -10,6 +10,18 @@ h1{
     color: var(--white);
 }
 
+p{
+    font-family: var(--pt);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
 .inactive{
     color: var(--grey)!important;
 }
