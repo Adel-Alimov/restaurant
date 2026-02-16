@@ -72,12 +72,18 @@
     display: flex;
 }
 
-.rewiews-text{
-    position: relative;
+.back-rewiew{
+    width: 100vw;
+}
+
+.back-rewiew > img{
+    width: 100vw;
 }
 
 .rewiews-text{
+    position: relative;
     margin-top: 50px;
+
 }
 
 .item-rewiew{
@@ -91,6 +97,11 @@
 
 .rewiew{
     background-color: #fff;
+    display: flex;
+    height: 319px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 30px;
 }
 
 .rewiew:not(:last-child){
@@ -101,4 +112,29 @@
     width: 104px;
     height: 104px;
     border-radius: 50%;
+}
+
+.rewiew-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.rewiew-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rewiew-name > h1{
+    color: #000!important;
+    font-size: 24px;
+}
+
+.rewiew-star{
+    display: flex;
+    align-items: center;
+}
+
+.rewiew-text{
+    font-size: 18px;
 }
