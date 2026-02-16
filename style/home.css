@@ -6,8 +6,9 @@
 
 .image-back{
     position: absolute;
-    filter: brightness(60%);
 }
+
+
 
 .header{
     position: relative;
@@ -70,6 +71,7 @@
 
 #rewiews{
     display: flex;
+    height: 520px;
 }
 
 .back-rewiew{
@@ -77,7 +79,7 @@
 }
 
 .back-rewiew > img{
-    width: 100vw;
+    width: 100%;
 }
 
 .rewiews-text{
@@ -125,6 +127,10 @@
     justify-content: space-between;
 }
 
+.title-rewiew{
+    margin-left: 150px;
+}
+
 .rewiew-name > h1{
     color: #000!important;
     font-size: 24px;
@@ -137,4 +143,52 @@
 
 .rewiew-text{
     font-size: 18px;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+}
+
+.contact-left, .contact-right{
+    width: 50%;
+}
+
+.contact-left > img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-right-top{
+    width: 50%;
+}
+
+.contact-right-top > h1{
+    color: #000;
+}
+
+footer{
+    display: flex;
+    background-color: var(--bg-black);
+    color: var(--white);
+    justify-content: space-around;
+}
+
+.footer-left > h1, .social > p{
+    font-size: 26px;
+}
+
+.links-list{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
 }

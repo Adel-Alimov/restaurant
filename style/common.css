@@ -26,6 +26,14 @@ button{
     color: var(--grey)!important;
 }
 
+.filter{
+    filter: brightness(60%);
+}
+
+.opacity{
+    opacity: 0.3;
+}
+
 /*==========Head========*/
 
 .header{
