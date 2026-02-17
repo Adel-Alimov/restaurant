@@ -1,7 +1,7 @@
-:root{
-    --white: #FFFFFF;
-    --orange: rgba(231, 96, 32, 1);
-    --black: rgba(0, 0, 0, 0.6);
-    --grey: rgba(158, 158, 158, 1);
-    --bg-black: rgba(18, 18, 18, 1)
+:root {
+  --white: #ffffff;
+  --orange: rgba(231, 96, 32, 1);
+  --black: rgba(0, 0, 0, 0.6);
+  --grey: rgba(158, 158, 158, 1);
+  --bg-black: rgba(18, 18, 18, 1);
 }
