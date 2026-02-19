@@ -1,3 +1,14 @@
 body {
-  background-image: url("../assets/img/img/page-bckg.png");
+    background-image: url("../assets/img/img/page-bckg.png");
+}
+
+#top-menus {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-categories {
+    margin-left: 50px;
 }
