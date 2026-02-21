@@ -10,5 +10,84 @@ body {
 }
 
 #menu-categories {
-    margin-left: 50px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu-button {
+    height: 46px;
+    width: 215px;
+    font-size: 20px;
+    font-family: var(--pt);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+#booking {
+    font-size: 24px;
+    width: 200px;
+    height: 93px;
+    padding-left: 20px;
+}
+
+#booking > a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#menu {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menuItem {
+    width: 590px;
+    height: 640px;
+    background-color: var(--white);
+}
+
+.menuItem > img {
+    width: 590px;
+    height: 463px;
+}
+
+figcaption {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.menuItemName {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.menuItemPrice {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.detailsButton {
+    background-color: var(--orange);
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 27.7px;
+    color: var(--white);
+    border-radius: 16px;
 }

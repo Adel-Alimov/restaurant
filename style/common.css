@@ -27,8 +27,8 @@ button {
 }
 
 .active {
-    background-color: var(--white);
-    color: #000;
+    background-color: var(--white) !important;
+    color: #000 !important;
 }
 
 .filter {
