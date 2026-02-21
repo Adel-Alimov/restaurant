@@ -1,0 +1,40 @@
+input {
+    border: none;
+}
+
+label > input {
+    border-bottom: 1px solid black;
+}
+
+.header {
+    background-color: #000000;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+}
+
+.main-left {
+    width: 50%;
+}
+
+.main-left > img {
+    width: 100%;
+}
+
+.main-right {
+    width: 50%;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.main-right-title > h1 {
+    color: #000;
+}
+
+.contact-name {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
