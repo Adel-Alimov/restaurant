@@ -1,21 +1,19 @@
 /*==========HEADER=========*/
-.container{
+.container {
     min-height: 700px;
-    width: 100vw;    
+    width: 100vw;
 }
 
-.image-back{
+.image-back {
     position: absolute;
 }
 
-
-
-.header{
+.header {
     position: relative;
 }
 
-#intro{
-    margin-top: 100px;
+#intro {
+    margin-top: 50px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,81 +21,83 @@
     align-items: center;
 }
 
-.title-intro{
+.title-intro {
     display: flex;
     text-align: center;
     width: 777px;
 }
 
-.title-intro > h1{
-    
+.title-intro > h1 {
     font-size: 96px;
     font-weight: 400;
 }
 
+.stock {
+    margin-top: 20px;
+}
+
 /*================GALLERY==========*/
-#gallery{
+#gallery {
     display: flex;
     width: 100%;
     margin: 0;
 }
 
-.rest-gallery{
+.rest-gallery {
     display: flex;
 }
 
-.left-gallery{
+.left-gallery {
     width: 50%;
 }
 
-.right-gallery{
+.right-gallery {
     width: 50%;
     max-width: 505px;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-.title-gallery > h1{
-    color: #000000!important;
+.title-gallery > h1 {
+    color: #000000 !important;
 }
 
-.arrow:not(:last-child){
+.arrow:not(:last-child) {
     margin-right: 15px;
 }
 
-#right-arrow{
+#right-arrow {
     transform: scale(-1, 1);
 }
 
-#rewiews{
+#rewiews {
     display: flex;
     height: 520px;
 }
 
-.back-rewiew{
+.back-rewiew {
     width: 100vw;
 }
 
-.back-rewiew > img{
+.back-rewiew > img {
     width: 100%;
 }
 
-.rewiews-text{
+.rewiews-text {
     position: relative;
     margin-top: 50px;
-
 }
 
-.item-rewiew{
+.item-rewiew {
     display: flex;
     margin-left: 50px;
 }
 
-#big-left-arrow{
+#big-left-arrow {
     transform: scale(-1, 1);
 }
 
-.rewiew{
+.rewiew {
     background-color: #fff;
     display: flex;
     height: 319px;
@@ -106,86 +106,88 @@
     padding-right: 30px;
 }
 
-.rewiew:not(:last-child){
+.rewiew:not(:last-child) {
     margin-right: 20px;
 }
 
-.rewiew-left > img{
+.rewiew-left > img {
     width: 104px;
     height: 104px;
     border-radius: 50%;
 }
 
-.rewiew-right{
+.rewiew-right {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-.rewiew-top{
+.rewiew-top {
     display: flex;
     justify-content: space-between;
 }
 
-.title-rewiew{
+.title-rewiew {
     margin-left: 150px;
 }
 
-.rewiew-name > h1{
-    color: #000!important;
+.rewiew-name > h1 {
+    color: #000 !important;
     font-size: 24px;
 }
 
-.rewiew-star{
+.rewiew-star {
     display: flex;
     align-items: center;
 }
 
-.rewiew-text{
+.rewiew-text {
     font-size: 18px;
 }
 
-.contact{
+.contact {
     display: flex;
     width: 100%;
 }
 
-.contact-left, .contact-right{
+.contact-left,
+.contact-right {
     width: 50%;
 }
 
-.contact-left > img{
+.contact-left > img {
     width: 100%;
     height: 100%;
 }
 
-.contact-right{
+.contact-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contact-right-top{
+.contact-right-top {
     width: 50%;
 }
 
-.contact-right-top > h1{
+.contact-right-top > h1 {
     color: #000;
 }
 
-footer{
+footer {
     display: flex;
     background-color: var(--bg-black);
     color: var(--white);
     justify-content: space-around;
 }
 
-.footer-left > h1, .social > p{
+.footer-left > h1,
+.social > p {
     font-size: 26px;
 }
 
-.links-list{
+.links-list {
     display: flex;
     list-style: none;
     justify-content: flex-end;

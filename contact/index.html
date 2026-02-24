@@ -52,9 +52,9 @@
         <main>
             <section class="contact">
                 <div class="main-left">
-                    <img src="../assets/gallery/gallery/contact/Rectangle 283.png" alt="" />
+                    <img src="../assets/gallery/gallery/contact/contact.png" alt="" />
                 </div>
-                <div class="main-right">
+                <div class="main-right center">
                     <div class="main-right-title">
                         <h1>
                             Бронирование столика <br />
@@ -84,9 +84,14 @@
                                 <button class="contact-button">-</button>
                                 <p>0</p>
                                 <button class="contact-button">+</button>
-                                <p>Количество гостей</p>
-                                <p>Дата и время</p>
-                                <details>
+                                <p class="contact-text">Количество гостей</p>
+                                <input
+                                    type="datetime"
+                                    class="datetime"
+                                    placeholder="Дата и время"
+                                />
+                                <!-- <p>Дата и время</p> -->
+                                <!-- <details>
                                     <summary></summary>
                                     <div class="contact-book">
                                         <section class="contact-book-title">
@@ -94,20 +99,20 @@
                                             <input type="datetime-local" />
                                         </section>
                                     </div>
-                                </details>
+                                </details> -->
                             </fieldset>
                             <fieldset class="submit">
                                 <label for="text">
                                     <input type="text" name="text" placeholder="Пожелания" />
                                 </label>
-                                <button type="submit">Забронировать</button>
+                                <button type="submit" class="orange-button">Забронировать</button>
                             </fieldset>
                         </form>
                     </div>
                 </div>
             </section>
             <section class="map">
-                <div class="map-left">
+                <div class="map-left center">
                     <div class="map-title">
                         <h1>
                             Мы ценим, что вы выбрали наш ресторан и обещаем сделать ваш визит

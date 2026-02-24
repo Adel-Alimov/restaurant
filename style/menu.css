@@ -91,3 +91,7 @@ figcaption {
     color: var(--white);
     border-radius: 16px;
 }
+
+.detailsButton:hover {
+    background-color: var(--orange-hov);
+}

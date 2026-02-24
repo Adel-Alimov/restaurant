@@ -75,7 +75,8 @@ button {
 }
 
 /*=======Item=====*/
-.orange-button {
+.orange-button,
+.stock-button {
     width: 420px;
     height: 80px;
     background-color: var(--orange);
@@ -88,6 +89,15 @@ button {
     font-family: var(--pt);
     font-weight: 700;
     font-size: 27.7px;
+}
+
+.stock-button {
+    background-color: inherit !important;
+    border: 2px solid var(--white);
+}
+
+.orange-button:hover {
+    background-color: var(--orange-hov);
 }
 
 /*========FOOTER=====*/
