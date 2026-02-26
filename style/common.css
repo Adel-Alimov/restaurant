@@ -1,4 +1,8 @@
 /*=========Main========*/
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ h1 {
 p {
     font-family: var(--pt);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.667vh;
 }
 
 button {
@@ -77,8 +81,8 @@ button {
 /*=======Item=====*/
 .orange-button,
 .stock-button {
-    width: 420px;
-    height: 80px;
+    width: 21.875vw;
+    height: 7.407vh;
     background-color: var(--orange);
     display: flex;
     justify-content: center;
@@ -88,7 +92,7 @@ button {
     text-decoration: none;
     font-family: var(--pt);
     font-weight: 700;
-    font-size: 27.7px;
+    font-size: 2.565vh;
 }
 
 .stock-button {
@@ -111,13 +115,13 @@ footer {
 
 .footer-left > h1,
 .social > p {
-    font-size: 26px;
+    font-size: 2.407vh;
 }
 
 .links-list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 1.389vh;
     align-items: center;
 }

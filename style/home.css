@@ -1,11 +1,15 @@
 /*==========HEADER=========*/
 .container {
-    min-height: 700px;
+    height: 99vh;
     width: 100vw;
+    position: relative;
+    background-image: url("../assets/img/img/home-bckg.png");
 }
 
 .image-back {
     position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .header {
@@ -13,7 +17,7 @@
 }
 
 #intro {
-    margin-top: 50px;
+    margin-top: 4.63vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -24,16 +28,16 @@
 .title-intro {
     display: flex;
     text-align: center;
-    width: 777px;
+    width: 40.469vw;
 }
 
 .title-intro > h1 {
-    font-size: 96px;
+    font-size: 8.889vh;
     font-weight: 400;
 }
 
 .stock {
-    margin-top: 20px;
+    margin-top: 1.852vh;
 }
 
 /*================GALLERY==========*/
@@ -53,9 +57,9 @@
 
 .right-gallery {
     width: 50%;
-    max-width: 505px;
+    max-width: 26.302vw;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 2.778vh;
 }
 
 .title-gallery > h1 {
@@ -63,7 +67,7 @@
 }
 
 .arrow:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 0.781vw;
 }
 
 #right-arrow {
@@ -72,7 +76,7 @@
 
 #rewiews {
     display: flex;
-    height: 520px;
+    height: 70vh;
 }
 
 .back-rewiew {
@@ -85,12 +89,12 @@
 
 .rewiews-text {
     position: relative;
-    margin-top: 50px;
+    margin-top: 4.63vh;
 }
 
 .item-rewiew {
     display: flex;
-    margin-left: 50px;
+    margin-left: 2.604vw;
 }
 
 #big-left-arrow {
@@ -100,26 +104,26 @@
 .rewiew {
     background-color: #fff;
     display: flex;
-    height: 319px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 30px;
+    height: 29.537vh;
+    padding-top: 1.852vh;
+    padding-left: 0.781vw;
+    padding-right: 1.563vw;
 }
 
 .rewiew:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 1.042vw;
 }
 
 .rewiew-left > img {
-    width: 104px;
-    height: 104px;
+    width: 5.417vw;
+    height: 5.417vw;
     border-radius: 50%;
 }
 
 .rewiew-right {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 1.042vw;
 }
 
 .rewiew-top {
@@ -128,12 +132,12 @@
 }
 
 .title-rewiew {
-    margin-left: 150px;
+    margin-left: 7.813vw;
 }
 
 .rewiew-name > h1 {
     color: #000 !important;
-    font-size: 24px;
+    font-size: 2.222vh;
 }
 
 .rewiew-star {
@@ -142,7 +146,7 @@
 }
 
 .rewiew-text {
-    font-size: 18px;
+    font-size: 1.667vh;
 }
 
 .contact {
@@ -184,13 +188,13 @@ footer {
 
 .footer-left > h1,
 .social > p {
-    font-size: 26px;
+    font-size: 2.407vh;
 }
 
 .links-list {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 0.781vw;
     align-items: center;
 }

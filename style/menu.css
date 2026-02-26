@@ -3,23 +3,23 @@ body {
 }
 
 #top-menus {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4.63vh;
+    margin-bottom: 4.63vh;
     display: flex;
     justify-content: space-between;
 }
 
 #menu-categories {
-    margin-left: 150px;
+    margin-left: 7.813vw;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.042vw;
 }
 
 .menu-button {
-    height: 46px;
-    width: 215px;
-    font-size: 20px;
+    height: 4.259vh;
+    width: 11.198vw;
+    font-size: 1.852vh;
     font-family: var(--pt);
     border: 1px solid var(--white);
     border-radius: 10px;
@@ -27,10 +27,10 @@ body {
 }
 
 #booking {
-    font-size: 24px;
-    width: 200px;
-    height: 93px;
-    padding-left: 20px;
+    font-size: 2.222vh;
+    width: 10.417vw;
+    height: 8.611vh;
+    padding-left: 1.042vw;
 }
 
 #booking > a {
@@ -51,43 +51,43 @@ body {
 }
 
 .menuItem {
-    width: 590px;
-    height: 640px;
+    width: 30.729vw;
+    height: 59.259vh;
     background-color: var(--white);
 }
 
 .menuItem > img {
-    width: 590px;
-    height: 463px;
+    width: 30.729vw;
+    height: 42.87vh;
 }
 
 figcaption {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 80px;
-    margin-bottom: 20px;
+    height: 7.407vh;
+    margin-bottom: 1.852vh;
 }
 
 .menuItemName {
     width: 60%;
-    margin-left: 20px;
+    margin-left: 1.042vw;
 }
 
 .menuItemPrice {
     width: 40%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 1.042vw;
 }
 
 .detailsButton {
     background-color: var(--orange);
     width: 80%;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 1.389vh 1.563vw;
     text-align: center;
-    font-size: 27.7px;
+    font-size: 2.565vh;
     color: var(--white);
     border-radius: 16px;
 }

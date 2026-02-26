@@ -1,7 +1,7 @@
 input {
     border: none;
     width: 100%;
-    padding: 5px 0;
+    padding: 0.463vh 0;
     border-bottom: 1px solid #000000;
 }
 
@@ -12,7 +12,7 @@ fieldset {
 }
 
 ::placeholder {
-    font-size: 16px;
+    font-size: 1.481vh;
     font-family: var(--pt);
     color: var(--grey);
 }
@@ -24,7 +24,7 @@ fieldset {
 .contact {
     width: 100%;
     display: flex;
-    max-height: 650px;
+    height: 88vh;
 }
 
 .contact-button {
@@ -42,9 +42,9 @@ fieldset {
 }
 
 .center {
-    max-width: 425px;
+    max-width: 22.135vw;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 2.778vh;
 }
 
 .main-right-title > h1 {
@@ -54,7 +54,7 @@ fieldset {
 .contact-name {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.042vw;
 }
 
 .contact-day-time-people {
@@ -64,20 +64,20 @@ fieldset {
 }
 
 .contact-text {
-    font-size: 16px;
+    font-size: 1.481vh;
     color: var(--grey);
 }
 
 .datetime {
-    width: 130px;
-    height: 20px;
+    width: 6.771vw;
+    height: 1.852vh;
     border: none;
     padding: 0;
-    margin-top: 2px;
+    margin-top: 0.185vh;
 }
 
 .submit > button {
-    margin-top: 20px;
+    margin-top: 1.852vh;
 }
 
 .map {
@@ -93,7 +93,7 @@ fieldset {
 .map-title {
     font-weight: 700;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 2.778vh;
 }
 
 .map-title > h1 {
