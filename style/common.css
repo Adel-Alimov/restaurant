@@ -44,9 +44,9 @@ button {
 }
 
 /*==========Head========*/
-
 .header {
-    background-color: var(--black);
+    position: relative;
+    display: flex;
 }
 
 .head-content {
@@ -55,10 +55,6 @@ button {
     width: 60%;
     margin: 0 auto;
     align-items: center;
-}
-
-.mobile-nav {
-    display: none;
 }
 
 #menu-container-full {
@@ -78,6 +74,26 @@ button {
     font-family: var(--pt);
 }
 
+.mobile-nav {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.but-mob {
+    color: #fff;
+    font-size: 5.556vh;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
 /*=======Item=====*/
 .orange-button,
 .stock-button {
@@ -98,10 +114,26 @@ button {
 .stock-button {
     background-color: inherit !important;
     border: 2px solid var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.stock-button:hover {
+    background-color: #fff !important;
+    color: #000;
 }
 
 .orange-button:hover {
     background-color: var(--orange-hov);
+}
+
+@media screen and (max-width: 900px) {
+    .orange-button,
+    .stock-button {
+        width: 70vw;
+    }
+    .orange-button {
+        margin-top: 5.555vh;
+    }
 }
 
 /*========FOOTER=====*/

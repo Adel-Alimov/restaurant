@@ -3,17 +3,9 @@
     height: 99vh;
     width: 100vw;
     position: relative;
-    background-image: url("../assets/img/img/home-bckg.png");
-}
-
-.image-back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.header {
-    position: relative;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/img/home-bckg.png");
 }
 
 #intro {
@@ -53,6 +45,7 @@
 
 .left-gallery {
     width: 50%;
+    position: relative;
 }
 
 .right-gallery {
@@ -77,6 +70,7 @@
 #rewiews {
     display: flex;
     height: 70vh;
+    background-image: url("../assets/img/img/page-bckg.png");
 }
 
 .back-rewiew {
@@ -101,10 +95,14 @@
     transform: scale(-1, 1);
 }
 
+.buttons-mob {
+    display: none;
+}
+
 .rewiew {
     background-color: #fff;
     display: flex;
-    height: 29.537vh;
+    min-height: 29.537vh;
     padding-top: 1.852vh;
     padding-left: 0.781vw;
     padding-right: 1.563vw;
@@ -115,8 +113,8 @@
 }
 
 .rewiew-left > img {
-    width: 5.417vw;
-    height: 5.417vw;
+    width: 104px;
+    height: 104px;
     border-radius: 50%;
 }
 
@@ -124,6 +122,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 1.042vw;
+}
+
+.rewiew-people {
+    display: flex;
+    flex-direction: row;
 }
 
 .rewiew-top {
@@ -149,6 +152,18 @@
     font-size: 1.667vh;
 }
 
+#rewiews-mob {
+    display: none;
+}
+
+.full {
+    margin-top: 5.555vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*======contact======*/
 .contact {
     display: flex;
     width: 100%;
@@ -197,4 +212,90 @@ footer {
     justify-content: flex-end;
     gap: 0.781vw;
     align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        background-image: url("../assets/img/img/page-bckg.png");
+    }
+    /*=====title======*/
+    .title-intro {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .title-intro > h1 {
+        font-size: 5.556vh;
+        font-weight: 400;
+    }
+    /*=======gallery======*/
+    #gallery {
+        margin-bottom: 50px;
+    }
+    .rest-gallery {
+        flex-direction: column;
+    }
+    .left-gallery,
+    .right-gallery {
+        width: 100%;
+    }
+    .right-gallery {
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-gallery {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .buttons {
+        display: none;
+    }
+    .buttons-mob {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+    .arrow {
+        border-radius: 10px;
+    }
+    /*=======rewiew=====*/
+    #rewiews {
+        display: none;
+    }
+    #rewiews-mob {
+        display: flex;
+        height: 70vh;
+        background-image: url("../assets/img/img/page-bckg.png");
+    }
+    .rewiew {
+        padding-left: 3vw;
+        padding-right: 5.555vw;
+    }
+    .rewiew-top {
+        flex-direction: column;
+    }
+    /*========contact=======*/
+    .contact {
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+    /*=======footer=====*/
+    footer {
+        flex-direction: column;
+    }
+    .links-list {
+        justify-content: flex-start;
+        gap: 2vw;
+    }
 }
