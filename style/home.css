@@ -2,7 +2,6 @@
 .container {
     height: 99vh;
     width: 100vw;
-    position: relative;
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/img/img/home-bckg.png");
@@ -41,6 +40,7 @@
 
 .rest-gallery {
     display: flex;
+    width: 100%;
 }
 
 .left-gallery {

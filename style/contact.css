@@ -17,7 +17,8 @@ fieldset {
     color: var(--grey);
 }
 
-.header {
+.header,
+.mobile-nav {
     background-color: #000000;
 }
 

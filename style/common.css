@@ -76,13 +76,23 @@ button {
 
 .mobile-nav {
     display: none;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
 }
 
-.but-mob {
-    color: #fff;
-    font-size: 5.556vh;
+details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+details > summary {
+    content: url("../assets/svg/svg/menu.svg");
+}
+
+details[open] > summary {
+    content: url("../assets/svg/svg/krest.svg");
+    padding-top: 2.222vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -92,6 +102,11 @@ button {
 
     .mobile-nav {
         display: flex;
+        min-height: 3vh;
+        background-color: var(--bg-black);
+    }
+    .menu-container-list {
+        flex-direction: column;
     }
 }
 /*=======Item=====*/
