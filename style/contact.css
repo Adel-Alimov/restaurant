@@ -25,7 +25,7 @@ fieldset {
 .contact {
     width: 100%;
     display: flex;
-    height: 88vh;
+    min-height: 88vh;
 }
 
 .contact-button {
@@ -43,9 +43,9 @@ fieldset {
 }
 
 .center {
-    max-width: 22.135vw;
+    max-width: 24.219vw;
     margin: 0 auto;
-    margin-top: 2.778vh;
+    margin-top: 10vh;
 }
 
 .main-right-title > h1 {
@@ -109,4 +109,33 @@ fieldset {
 .map-right > img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+    }
+    .main-left,
+    .main-right,
+    .map-left,
+    .map-right {
+        width: 100%;
+    }
+    .map {
+        flex-direction: column-reverse;
+    }
+    .map-right {
+        width: 100%;
+        height: 100%;
+    }
+    .orange-button {
+        width: 100%;
+    }
+    .center {
+        max-width: 70vw;
+        padding: 5vw;
+    }
+    .datetime {
+        width: 20vw;
+    }
 }

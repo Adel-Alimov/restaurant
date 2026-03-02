@@ -45,8 +45,11 @@ button {
 
 /*==========Head========*/
 .header {
-    position: relative;
+    position: fixed;
     display: flex;
+    background-color: var(--black);
+    z-index: 100;
+    width: 100vw;
 }
 
 .head-content {
@@ -78,6 +81,9 @@ button {
     display: none;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
 }
 
 details {
@@ -171,4 +177,14 @@ footer {
     justify-content: flex-end;
     gap: 1.389vh;
     align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        flex-direction: column;
+    }
+    .links-list {
+        justify-content: flex-start;
+        gap: 2vw;
+    }
 }

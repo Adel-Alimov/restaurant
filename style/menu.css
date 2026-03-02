@@ -3,7 +3,6 @@ body {
 }
 
 #top-menus {
-    margin-top: 4.63vh;
     margin-bottom: 4.63vh;
     display: flex;
     justify-content: space-between;
@@ -14,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 1.042vw;
+    margin-top: 20vh;
 }
 
 .menu-button {
@@ -27,6 +27,7 @@ body {
 }
 
 #booking {
+    margin-top: 20vh;
     font-size: 2.222vh;
     width: 10.417vw;
     height: 8.611vh;
@@ -94,4 +95,24 @@ figcaption {
 
 .detailsButton:hover {
     background-color: var(--orange-hov);
+}
+
+@media screen and (max-width: 900px) {
+    #menu-categories {
+        flex-direction: column;
+    }
+    .menu-button {
+        width: 32vw;
+    }
+    #booking {
+        width: 25vw;
+        height: 25vw;
+        font-size: 1.555vh;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .menuItem,
+    .menuItem > img {
+        width: 70vw;
+    }
 }

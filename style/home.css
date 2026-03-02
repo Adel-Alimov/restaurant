@@ -8,7 +8,6 @@
 }
 
 #intro {
-    margin-top: 4.63vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -20,6 +19,7 @@
     display: flex;
     text-align: center;
     width: 40.469vw;
+    margin-top: 20vh;
 }
 
 .title-intro > h1 {
@@ -289,13 +289,5 @@ footer {
     .contact-left,
     .contact-right {
         width: 100%;
-    }
-    /*=======footer=====*/
-    footer {
-        flex-direction: column;
-    }
-    .links-list {
-        justify-content: flex-start;
-        gap: 2vw;
     }
 }
