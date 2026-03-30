@@ -27,6 +27,8 @@ body {
 }
 
 #booking {
+    position: fixed;
+    right: 0;
     margin-top: 20vh;
     font-size: 2.222vh;
     width: 10.417vw;
@@ -40,7 +42,8 @@ body {
 }
 
 #menu {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .main-food {
@@ -51,7 +54,7 @@ body {
 
 .menuItem {
     width: 30.729vw;
-    height: 59.259vh;
+    height: 61.259vh;
     background-color: var(--white);
 }
 
@@ -65,11 +68,11 @@ figcaption {
     width: 100%;
     justify-content: space-between;
     height: 7.407vh;
-    margin-bottom: 1.852vh;
+    margin-bottom: 2.852vh;
 }
 
 .menuItemName {
-    width: 60%;
+    width: 80%;
     margin-left: 1.042vw;
 }
 

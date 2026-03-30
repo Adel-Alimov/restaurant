@@ -69,6 +69,11 @@ fieldset {
     color: var(--grey);
 }
 
+#peoples {
+    border: none;
+    width: 5px;
+}
+
 .datetime {
     width: 6.771vw;
     height: 1.852vh;
