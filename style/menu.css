@@ -40,15 +40,13 @@ body {
 }
 
 #menu {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .main-food {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .menuItem {
@@ -114,6 +112,9 @@ figcaption {
         font-size: 1.555vh;
         border-radius: 50%;
         text-align: center;
+    }
+    .main-food {
+        grid-template-columns: 1fr;
     }
     .menuItem,
     .menuItem > img {
