@@ -180,6 +180,9 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+    p {
+        font-size: 2.5vw;
+    }
     footer {
         flex-direction: column;
     }

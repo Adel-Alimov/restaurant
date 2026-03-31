@@ -58,10 +58,12 @@
 
 .gal-img {
     background-image: url("../assets/gallery/gallery/gallery_about.png");
+    height: 100%;
 }
 
 .val-img {
     background-image: url("../assets/gallery/gallery/gallery_values.png");
+    height: 100%;
 }
 
 .gal-title h1::after {
@@ -256,6 +258,7 @@ footer {
     /*=======gallery======*/
     #gallery {
         margin-bottom: 50px;
+        height: 90vh;
     }
     .rest-gallery {
         flex-direction: column;
@@ -264,6 +267,7 @@ footer {
     .right-gallery {
         width: 100%;
     }
+
     .right-gallery {
         max-width: none;
         display: flex;
@@ -271,6 +275,11 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
+    .gal-img {
+        object-fit: contain;
+    }
+
     .text-gallery {
         padding-left: 15px;
         padding-right: 20px;
