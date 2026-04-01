@@ -39,7 +39,7 @@ button {
     filter: brightness(60%);
 }
 
-.opacity {
+button:disabled {
     opacity: 0.3;
 }
 
