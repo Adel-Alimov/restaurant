@@ -1,0 +1,34 @@
+{
+    "desert": [
+        {
+            "name": "Тыквенное наслаждение",
+            "price": "500",
+            "img": "../assets/gallery/gallery/menu/d/1.png"
+        },
+        {
+            "name": "Шоколадная симфония",
+            "price": "350",
+            "img": "../assets/gallery/gallery/menu/d/2.png"
+        },
+        {
+            "name": "Тарт с кремом и кешью, карамелью и кумкватами",
+            "price": "500",
+            "img": "../assets/gallery/gallery/menu/d/3.png"
+        },
+        {
+            "name": "Кокосовый крем-карамель с сливами и манго",
+            "price": "450",
+            "img": "../assets/gallery/gallery/menu/d/4.png"
+        },
+        {
+            "name": "Жареное мороженое с мусом из свежих ягод",
+            "price": "400",
+            "img": "../assets/gallery/gallery/menu/d/5.png"
+        },
+        {
+            "name": "Медовая пахлава с грецкими орехами",
+            "price": "550",
+            "img": "../assets/gallery/gallery/menu/d/6.png"
+        }
+    ]
+}

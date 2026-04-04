@@ -1,0 +1,34 @@
+{
+    "mainCourse": [
+        {
+            "name": "Дорадо с овощами гриль",
+            "price": "1500",
+            "img": "../assets/gallery/gallery/menu/m/1.png"
+        },
+        {
+            "name": "Стейк из премиальной вырезки с брокколи и горчичным соусом",
+            "price": "2350",
+            "img": "../assets/gallery/gallery/menu/m/2.png"
+        },
+        {
+            "name": "Тушеная козлятина на кости с картофельным пюре на сливках",
+            "price": "2500",
+            "img": "../assets/gallery/gallery/menu/m/3.png"
+        },
+        {
+            "name": "Итальянская классическая лазанья с говядиной в свежих томатах",
+            "price": "1450",
+            "img": "../assets/gallery/gallery/menu/m/4.png"
+        },
+        {
+            "name": "Вок с рисом и курицей под соусом терияки",
+            "price": "1000",
+            "img": "../assets/gallery/gallery/menu/m/5.png"
+        },
+        {
+            "name": "Хинкали с говядиной, калакури и аджарским соусом",
+            "price": "1250",
+            "img": "../assets/gallery/gallery/menu/m/6.png"
+        }
+    ]
+}

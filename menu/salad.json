@@ -1,0 +1,34 @@
+{
+    "salad": [
+        {
+            "name": "Индийские лепешки с зеленым горошком в сливочном соусе",
+            "price": "750",
+            "img": "../assets/gallery/gallery/menu/s/1.png"
+        },
+        {
+            "name": "Жгучие гриль-перцы",
+            "price": "850",
+            "img": "../assets/gallery/gallery/menu/s/2.png"
+        },
+        {
+            "name": "Греческий салат",
+            "price": "550",
+            "img": "../assets/gallery/gallery/menu/s/3.png"
+        },
+        {
+            "name": "Брускетта с томатами и оливковым маслом",
+            "price": "450",
+            "img": "../assets/gallery/gallery/menu/s/4.png"
+        },
+        {
+            "name": "Морской коктейль",
+            "price": "850",
+            "img": "../assets/gallery/gallery/menu/s/5.png"
+        },
+        {
+            "name": "Сырные палочки из моцарелыс клюквенным соусом",
+            "price": "850",
+            "img": "../assets/gallery/gallery/menu/s/6.png"
+        }
+    ]
+}
