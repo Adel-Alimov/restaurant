@@ -102,6 +102,42 @@ figcaption {
     display: none;
 }
 
+#detailsWindow {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 30.729vw;
+    height: 61.259vh;
+    background-color: var(--white);
+    z-index: 2;
+    padding: 15px;
+}
+
+#detailsClose {
+    display: flex;
+    justify-content: right;
+}
+
+#detailsTitle {
+    font-family: var(--pt);
+    margin-bottom: 0;
+}
+
+#detailsKcal {
+    color: var(--grey);
+    font-size: 0.9vw;
+    margin-bottom: 1vw;
+}
+
+#detailsPrice {
+    font-family: var(--pt);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
 @media screen and (max-width: 900px) {
     #menu-categories {
         flex-direction: column;

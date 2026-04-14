@@ -1,89 +1,65 @@
-let mas = [];
-
 async function loadMenuMain() {
-    const response = await fetch("mainCourse.json");
-    const data = await response.json();
+    const category = new URL(document.location).searchParams.get("category") ?? "mainCourse";
 
-    let template = document.getElementById("menuItemCard");
-
-    let food = document.querySelector(".main-food");
-
-    for (datas of data.mainCourse) {
-        mas.push(datas);
-    }
-
-    for (let i = 0; i < mas.length; i++) {
-        let clone = template.content.cloneNode(true);
-
-        let img = clone.querySelector(".menuItemPic");
-
-        let name = clone.querySelector(".menuItemName");
-
-        let price = clone.querySelector(".menuItemPrice");
-        img.setAttribute("src", mas[i].img);
-        name.textContent = mas[i].name;
-        price.textContent = mas[i].price;
-        food.appendChild(clone);
-    }
-}
-
-async function loadMenuSalad() {
-    const response = await fetch("salad.json");
-    const data = await response.json();
-
-    let template = document.getElementById("menuItemCard");
+    const buttons = document.querySelectorAll(".menu-button");
 
     let food = document.querySelector(".main-food");
 
-    for (datas of data.salad) {
-        mas.push(datas);
+    try {
+        const response = await fetch(`${category}.json`);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        let template = document.getElementById("menuItemCard");
+
+        for (datas of data) {
+            let clone = template.content.cloneNode(true);
+
+            let img = clone.querySelector(".menuItemPic");
+
+            let name = clone.querySelector(".menuItemName");
+
+            let price = clone.querySelector(".menuItemPrice");
+
+            let dataKcal = clone.querySelector(".detailsButton");
+
+            let dataDetails = clone.querySelector(".detailsButton");
+
+            img.setAttribute("src", datas["img"]);
+            name.textContent = datas["name"];
+            price.textContent = datas["price"];
+            dataKcal.dataset.kcal = datas["kcal"];
+            dataDetails.dataset.details = datas["info"];
+            food.appendChild(clone);
+        }
+    } catch {
+        food.innerHTML = "<p>Ошибка загрузки меню</p>";
     }
+    buttons.forEach((button) => {
+        if (button.dataset.cat === category) {
+            button.disabled = true;
+        } else {
+            button.disabled = false;
+        }
+    });
+    $(".detailsButton").on("click", function (event) {
+        $("#detailsWindow").show("slow");
+        let currentEvent = $(event.target);
+        let title = currentEvent.closest(".menuItem").find(".menuItemName").text();
+        let price = currentEvent.closest(".menuItem").find(".menuItemPrice").text();
+        let kcal = currentEvent.attr("data-kcal");
+        let info = currentEvent.attr("data-details");
+        $("#detailsTitle").text(title);
+        $("#detailsKcal").text(`${kcal}ккал`);
+        $("#detailsPrice").text(`${price}₽`);
+        $("#detailsInfo").text(info);
+    });
 
-    for (let i = 0; i < mas.length; i++) {
-        let clone = template.content.cloneNode(true);
-
-        let img = clone.querySelector(".menuItemPic");
-
-        let name = clone.querySelector(".menuItemName");
-
-        let price = clone.querySelector(".menuItemPrice");
-        img.setAttribute("src", mas[i].img);
-        name.textContent = mas[i].name;
-        price.textContent = mas[i].price;
-        food.appendChild(clone);
-    }
+    $("#detailsClose").on("click", function () {
+        $("#detailsWindow").hide("slow");
+    });
 }
-
-async function loadMenuDesert() {
-    const response = await fetch("desert.json");
-    const data = await response.json();
-
-    let template = document.getElementById("menuItemCard");
-
-    let food = document.querySelector(".main-food");
-
-    for (datas of data.desert) {
-        mas.push(datas);
-    }
-
-    for (let i = 0; i < mas.length; i++) {
-        let clone = template.content.cloneNode(true);
-
-        let img = clone.querySelector(".menuItemPic");
-
-        let name = clone.querySelector(".menuItemName");
-
-        let price = clone.querySelector(".menuItemPrice");
-        img.setAttribute("src", mas[i].img);
-        name.textContent = mas[i].name;
-        price.textContent = mas[i].price;
-        food.appendChild(clone);
-    }
-}
-
-loadMenuMain();
-
-// let menuItems = document.querySelectorAll('.menuItem')
-// for (menuItem of menuItems){
-//     menuItem.remove()
-// }
+document.addEventListener("DOMContentLoaded", loadMenuMain);

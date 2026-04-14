@@ -58,31 +58,38 @@
                         <p class="menuItemName"></p>
                         <p class="menuItemPrice"></p>
                     </figcaption>
-                    <p class="detailsButton" data-details>Подробнее</p>
+                    <p class="detailsButton" data-details="" data-kcal="">Подробнее</p>
                 </div>
             </figure>
         </template>
 
         <div id="top-menus">
             <div id="menu-categories">
-                <a href=""
-                    ><button data-cat="" class="menu-button active">Основные блюда</button></a
+                <a href="?category=mainCourse"
+                    ><button data-cat="mainCourse" class="menu-button" disabled>
+                        Основные блюда
+                    </button></a
                 >
-                <a href=""><button data-cat="" class="menu-button">Закуски и салаты</button></a>
-                <a href=""><button data-cat="" class="menu-button">Десерты</button></a>
+                <a href="?category=salad"
+                    ><button data-cat="salad" class="menu-button">Закуски и салаты</button></a
+                >
+                <a href="?category=desert"
+                    ><button data-cat="desert" class="menu-button">Десерты</button></a
+                >
             </div>
             <div id="booking" class="orange-button"><a href="#">Онлайн бронирование</a></div>
         </div>
         <main id="menu">
             <div class="main-food"></div>
+            <div id="detailsWindow">
+                <div id="detailsClose">X</div>
+                <h3 id="detailsTitle"></h3>
+                <div id="detailsKcal"></div>
+                <div id="detailsPrice"></div>
+                <div id="detailsInfo"></div>
+            </div>
         </main>
-        <div id="detailsWindow">
-            <div id="detailsClose"></div>
-            <h3 id="detailsTitle"></h3>
-            <div id="detailsKcal"></div>
-            <div id="detailsPrice"></div>
-            <div id="detailsInfo"></div>
-        </div>
+
         <footer>
             <div class="footer-left">
                 <h3>ЭКЛЕКТИКА</h3>
@@ -118,6 +125,7 @@
             </div>
         </footer>
         <div class="booking-mob orange-button"><a href="#">Онлайн бронирование</a></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
         <script src="menu.js"></script>
     </body>
 </html>

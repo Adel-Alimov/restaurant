@@ -30,17 +30,17 @@ button {
     color: var(--grey) !important;
 }
 
-.active {
-    background-color: var(--white) !important;
-    color: #000 !important;
-}
-
 .filter {
     filter: brightness(60%);
 }
 
-button:disabled {
+.arrow:disabled {
     opacity: 0.3;
+}
+
+.menu-button:disabled {
+    background-color: var(--white) !important;
+    color: #000 !important;
 }
 
 /*==========Head========*/
