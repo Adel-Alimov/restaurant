@@ -66,19 +66,21 @@
     height: 100%;
 }
 
-.gal-title h1::after {
+.item-gallery h1::after {
     content: "О нас";
+    color: var(--bg-black);
 }
 
-.gal-text p::after {
+.item-gallery p::after {
     content: "Ресторан «Эклектика» — это место, где сочетаются утонченный вкус и теплая атмосфера. Наши шеф-повара тщательно подбирают ингредиенты и создают блюда с любовью к каждому клиенту.\A\A«Эклектика» предлагает уютные залы для семейных ужинов, романтических свиданий и деловых обедов. Мы ценим ваше время и комфорт, поэтому обеспечиваем высокий уровень сервиса. \A\AДобро пожаловать в мир великолепных вкусов и неповторимых воспоминаний.";
 }
 
-.val-title h1::after {
+.item-values h1::after {
     content: "Наши ценности";
+    color: var(--bg-black);
 }
 
-.val-text p::after {
+.item-values p::after {
     content: "«Эклектика» — это уютное место, где каждый гость становится частью нашей семьи. Мы гордимся тем, что создали атмосферу, в которой сочетается элегантность и теплота, а меню предлагает богатство вкусов, подчеркивая лучшие кулинарные традиции мира.\A\AРесторан «Эклектика» — это не просто еще одно место для обеда. Это место, где сливаются воедино стиль, вкус и теплота, создавая неповторимый опыт для тех, кто ценит настоящую гастрономию.";
 }
 
@@ -97,34 +99,34 @@
 
 #rewiews {
     display: flex;
-    height: 70vh;
+    flex-direction: column;
+    /* height: 70vh; */
     background-image: url("../assets/img/img/page-bckg.png");
-}
-
-.back-rewiew {
-    width: 100vw;
-}
-
-.back-rewiew > img {
-    width: 100%;
-}
-
-.rewiews-text {
-    position: relative;
-    margin-top: 4.63vh;
 }
 
 .item-rewiew {
     display: flex;
     margin-left: 2.604vw;
+    margin-bottom: 50px;
 }
 
 #big-left-arrow {
     transform: scale(-1, 1);
 }
 
+#big-left-arrow,
+#big-right-arrow {
+    cursor: pointer;
+}
+
 .buttons-mob {
     display: none;
+}
+
+.rewiew-people {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .rewiew {
@@ -134,6 +136,7 @@
     padding-top: 1.852vh;
     padding-left: 0.781vw;
     padding-right: 1.563vw;
+    min-width: 600px;
 }
 
 .rewiew:not(:last-child) {
@@ -152,11 +155,6 @@
     margin-left: 1.042vw;
 }
 
-.rewiew-people {
-    display: flex;
-    flex-direction: row;
-}
-
 .rewiew-top {
     display: flex;
     justify-content: space-between;
@@ -168,7 +166,7 @@
 
 .rewiew-name > h1 {
     color: #000 !important;
-    font-size: 2.222vh;
+    font-size: 4.622vh;
 }
 
 .rewiew-star {

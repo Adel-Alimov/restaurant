@@ -30,6 +30,11 @@ button {
     color: var(--grey) !important;
 }
 
+.inactive-but {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 .filter {
     filter: brightness(60%);
 }

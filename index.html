@@ -64,6 +64,33 @@
                 </details>
             </nav>
 
+            <template id="rewiewTemplate">
+                <div class="rewiew">
+                    <div class="rewiew-left">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="rewiew-right">
+                        <div class="rewiew-top">
+                            <div class="rewiew-name">
+                                <h1></h1>
+                            </div>
+                            <div class="rewiew-star">
+                                <img src="assets/svg/svg/star.svg" alt="" />
+                                <img src="assets/svg/svg/star.svg" alt="" />
+                                <img src="assets/svg/svg/star.svg" alt="" />
+                                <img src="assets/svg/svg/star.svg" alt="" />
+                                <img src="assets/svg/svg/star.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="rewiew-bottom">
+                            <div class="rewiew-text">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
             <main id="intro">
                 <div class="title-intro">
                     <h1>Ресторан «ЭКЛЕКТИКА»</h1>
@@ -89,13 +116,9 @@
                     </div>
                 </div>
 
-                <div class="right-gallery">
-                    <div class="title-gallery gal-title">
-                        <h1></h1>
-                    </div>
-                    <div class="text-gallery gal-text">
-                        <p></p>
-                    </div>
+                <div class="right-gallery item-gallery">
+                    <h1 class="title-gallery"></h1>
+                    <p class="text-gallery"></p>
                     <div class="buttons">
                         <button id="left-arrow" class="arrow" disabled>
                             <img src="assets/svg/svg/left-arrow.svg" alt="" />
@@ -108,146 +131,143 @@
             </div>
         </section>
         <section id="rewiews">
-            <div class="rewiews-text">
-                <div class="title-rewiew">
-                    <h1>Отзывы</h1>
-                </div>
-                <div class="item-rewiew">
-                    <button id="big-left-arrow">
-                        <img src="assets/svg/svg/big-right-arrow.svg" alt="" class="opacity" />
-                    </button>
-                    <div class="rewiew-people">
-                        <div class="rewiew">
-                            <div class="rewiew-left">
-                                <img src="assets/reviews/reviews/reviewNatalya.png" alt="" />
-                            </div>
-                            <div class="rewiew-right">
-                                <div class="rewiew-top">
-                                    <div class="rewiew-name">
-                                        <h1>Наталья Иванова</h1>
-                                    </div>
-                                    <div class="rewiew-star">
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="rewiew-bottom">
-                                    <div class="rewiew-text">
-                                        <p>
-                                            Посетили семейный ресторан вместе с мужем и детьми —
-                                            отличное место для семейного ужина! Обстановка очень
-                                            уютная, а обслуживание выше всяких похвал. Наши дети в
-                                            восторге от детского меню, которое оказалось не только
-                                            вкусным, но и заботливо подготовленным с учетом детских
-                                            предпочтений. Будем рекомендовать всем друзьям и
-                                            обязательно вернемся.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="title-rewiew">
+                <h1>Отзывы</h1>
+            </div>
+            <div class="item-rewiew">
+                <img
+                    src="assets/svg/svg/big-right-arrow.svg"
+                    alt="Стрелка влево"
+                    id="big-left-arrow"
+                    class="inactive-but"
+                />
+
+                <div class="rewiew-people" id="rewiew-people">
+                    <div class="rewiew">
+                        <div class="rewiew-left">
+                            <img src="assets/reviews/reviews/reviewNatalya.png" alt="" />
                         </div>
-                        <div class="rewiew">
-                            <div class="rewiew-left">
-                                <img src="assets/reviews/reviews/reviewAleksandr.png" alt="" />
-                            </div>
-                            <div class="rewiew-right">
-                                <div class="rewiew-top">
-                                    <div class="rewiew-name">
-                                        <h1>Александр Петров</h1>
-                                    </div>
-                                    <div class="rewiew-star">
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                    </div>
+                        <div class="rewiew-right">
+                            <div class="rewiew-top">
+                                <div class="rewiew-name">
+                                    <h1>Наталья Иванова</h1>
                                 </div>
-                                <div class="rewiew-bottom">
-                                    <div class="rewiew-text">
-                                        <p>
-                                            Этот ресторан — настоящая находка! Проводил здесь
-                                            деловой ужин с партнерами, и все остались в восторге.
-                                            Обслуживание на высшем уровне, персонал внимателен к
-                                            каждой детали. Кухня порадовала своим разнообразием.
-                                            Отличное место для деловых встреч и ужинов в уютной
-                                            обстановке. Рекомендую!
-                                        </p>
-                                    </div>
+                                <div class="rewiew-star">
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="rewiew" style="display: none">
-                            <div class="rewiew-left">
-                                <img src="assets/reviews/reviews/reviewIgor.png" alt="" />
-                            </div>
-                            <div class="rewiew-right">
-                                <div class="rewiew-top">
-                                    <div class="rewiew-name">
-                                        <h1>Игорь Ковалев</h1>
-                                    </div>
-                                    <div class="rewiew-star">
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="rewiew-bottom">
-                                    <div class="rewiew-text">
-                                        <p>
-                                            Провели здесь день рождения — атмосфера просто
-                                            великолепная. Персонал веселый и отзывчивый, кухня
-                                            порадовала. Особенно понравились закуски к пиву!
-                                            Обязательно будем возвращаться, чтобы попробовать все
-                                            блюда из меню.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rewiew" style="display: none">
-                            <div class="rewiew-left">
-                                <img src="assets/reviews/reviews/reviewMarina.png" alt="" />
-                            </div>
-                            <div class="rewiew-right">
-                                <div class="rewiew-top">
-                                    <div class="rewiew-name">
-                                        <h1>Марина Соколова</h1>
-                                    </div>
-                                    <div class="rewiew-star">
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                        <img src="assets/svg/svg/star.svg" alt="" />
-                                    </div>
-                                </div>
-                                <div class="rewiew-bottom">
-                                    <div class="rewiew-text">
-                                        <p>
-                                            Посетили семейный ресторан с подругами на девичнике, и
-                                            это был наш лучший выбор! У нас был волшебный вечер —
-                                            вкусная еда, отличные коктейли и веселая атмосфера.
-                                            Обязательно вернемся сюда с мужьями! Очень рекомендую
-                                            для дружеских посиделок и праздников.
-                                        </p>
-                                    </div>
+                            <div class="rewiew-bottom">
+                                <div class="rewiew-text">
+                                    <p>
+                                        Посетили семейный ресторан вместе с мужем и детьми —
+                                        отличное место для семейного ужина! Обстановка очень уютная,
+                                        а обслуживание выше всяких похвал. Наши дети в восторге от
+                                        детского меню, которое оказалось не только вкусным, но и
+                                        заботливо подготовленным с учетом детских предпочтений.
+                                        Будем рекомендовать всем друзьям и обязательно вернемся.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button id="big-right-arrow">
-                        <img src="assets/svg/svg/big-right-arrow.svg" alt="" />
-                    </button>
+                    <div class="rewiew">
+                        <div class="rewiew-left">
+                            <img src="assets/reviews/reviews/reviewAleksandr.png" alt="" />
+                        </div>
+                        <div class="rewiew-right">
+                            <div class="rewiew-top">
+                                <div class="rewiew-name">
+                                    <h1>Александр Петров</h1>
+                                </div>
+                                <div class="rewiew-star">
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="rewiew-bottom">
+                                <div class="rewiew-text">
+                                    <p>
+                                        Этот ресторан — настоящая находка! Проводил здесь деловой
+                                        ужин с партнерами, и все остались в восторге. Обслуживание
+                                        на высшем уровне, персонал внимателен к каждой детали. Кухня
+                                        порадовала своим разнообразием. Отличное место для деловых
+                                        встреч и ужинов в уютной обстановке. Рекомендую!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rewiew">
+                        <div class="rewiew-left">
+                            <img src="assets/reviews/reviews/reviewIgor.png" alt="" />
+                        </div>
+                        <div class="rewiew-right">
+                            <div class="rewiew-top">
+                                <div class="rewiew-name">
+                                    <h1>Игорь Ковалев</h1>
+                                </div>
+                                <div class="rewiew-star">
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="rewiew-bottom">
+                                <div class="rewiew-text">
+                                    <p>
+                                        Провели здесь день рождения — атмосфера просто великолепная.
+                                        Персонал веселый и отзывчивый, кухня порадовала. Особенно
+                                        понравились закуски к пиву! Обязательно будем возвращаться,
+                                        чтобы попробовать все блюда из меню.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rewiew">
+                        <div class="rewiew-left">
+                            <img src="assets/reviews/reviews/reviewMarina.png" alt="" />
+                        </div>
+                        <div class="rewiew-right">
+                            <div class="rewiew-top">
+                                <div class="rewiew-name">
+                                    <h1>Марина Соколова</h1>
+                                </div>
+                                <div class="rewiew-star">
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="rewiew-bottom">
+                                <div class="rewiew-text">
+                                    <p>
+                                        Посетили семейный ресторан с подругами на девичнике, и это
+                                        был наш лучший выбор! У нас был волшебный вечер — вкусная
+                                        еда, отличные коктейли и веселая атмосфера. Обязательно
+                                        вернемся сюда с мужьями! Очень рекомендую для дружеских
+                                        посиделок и праздников.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <img src="assets/svg/svg/big-right-arrow.svg" alt="" id="big-right-arrow" />
             </div>
         </section>
-        <section id="rewiews-mob">
+        <!-- <section id="rewiews-mob">
             <div class="rewiews-text">
                 <div class="title-rewiew">
                     <h1>Отзывы</h1>
@@ -383,7 +403,7 @@
                     <button class="stock-button">Показать еще</button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="contact">
             <div class="contact-left">
@@ -446,7 +466,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
         <script src="index.js"></script>
-        <!-- <script src="reviews.js" async="false"></script>
-        <script src="events.js" async="false"></script> -->
+        <!-- <script src="reviews.js" async="false"></script> -->
+        <script src="events.js" async="false"></script>
     </body>
 </html>
