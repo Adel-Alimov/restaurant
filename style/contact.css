@@ -58,10 +58,17 @@ fieldset {
     gap: 1.042vw;
 }
 
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .contact-day-time-people {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
 }
 
 .contact-text {
@@ -71,7 +78,8 @@ fieldset {
 
 #peoples {
     border: none;
-    width: 5px;
+    width: 15px;
+    text-align: center;
 }
 
 .datetime {

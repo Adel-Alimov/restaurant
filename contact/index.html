@@ -80,18 +80,25 @@
                                     <input type="email" name="email" placeholder="Почта" />
                                 </label>
                             </fieldset>
-                            <fieldset class="contact-day-time-people">
-                                <button class="contact-button">-</button>
-                                <input id="peoples" type="text" value="1" readonly disabled />
-                                <button class="contact-button">+</button>
-                                <p class="contact-text">Количество гостей</p>
-                                <input
-                                    type="datetime"
-                                    class="datetime"
-                                    placeholder="Дата и время"
-                                />
-                                <!-- <p>Дата и время</p> -->
-                                <!-- <details>
+                            <div class="field">
+                                <fieldset class="contact-day-time-people">
+                                    <button class="contact-button" id="button-minus" type="button">
+                                        -
+                                    </button>
+                                    <input id="peoples" type="text" value="1" readonly disabled />
+                                    <button class="contact-button" id="button-plus" type="button">
+                                        +
+                                    </button>
+                                    <p class="contact-text">Количество гостей</p>
+                                </fieldset>
+                                <fieldset class="input-time">
+                                    <input
+                                        type="datetime"
+                                        class="datetime"
+                                        placeholder="Дата и время"
+                                    />
+                                    <!-- <p>Дата и время</p> -->
+                                    <!-- <details>
                                     <summary></summary>
                                     <div class="contact-book">
                                         <section class="contact-book-title">
@@ -100,7 +107,9 @@
                                         </section>
                                     </div>
                                 </details> -->
-                            </fieldset>
+                                </fieldset>
+                            </div>
+
                             <fieldset class="submit">
                                 <label for="text">
                                     <input type="text" name="text" placeholder="Пожелания" />
@@ -174,5 +183,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>
