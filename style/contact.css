@@ -152,3 +152,97 @@ fieldset {
         width: 20vw;
     }
 }
+
+#calendar {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 35vw;
+    width: 30vw;
+    background: white;
+    border: 1px solid darkgray;
+    padding: 10px 5px 20px 5px;
+}
+
+#calendar .close {
+    margin: 5px 5px;
+    font-size: 2.3em;
+    font-weight: bolder;
+}
+
+#calendar h2 {
+    margin: 10px 5px;
+}
+
+#calendar h3 {
+    margin: 5px 0;
+}
+
+#calendar .day-selector {
+    width: 100%;
+}
+
+#calendar .day-selector td,
+#calendar .day-selector th {
+    text-align: center;
+    padding: 5px;
+}
+
+#calendar .day-selector td div {
+    padding: 7px;
+    font-weight: bold;
+    color: gray;
+}
+
+#calendar .day-selector td .selected {
+    background: #222b45;
+    color: white;
+    border-radius: calc(1em + 5px);
+}
+
+#calendar .day-selector td .disabled {
+    color: lightgray;
+}
+
+#calendar .time-selector,
+#calendar .month-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#calendar .time-selector button,
+#calendar .month-selector button {
+    width: 30%;
+    margin: 3px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1f3f8;
+    color: #8b9cb3;
+}
+
+#calendar .month-selector button {
+    border: none;
+    background: none;
+    color: #8b9cb3;
+}
+
+#calendar .time-selector button.occupied {
+    visibility: hidden;
+}
+
+#calendar .time-selector button.selected {
+    background: #222b45;
+    color: white;
+}
+
+#calendar .month-selector button.selected {
+    border: none;
+    border-radius: calc(0.55em + 1px);
+    background: #222b45;
+    color: white;
+}
