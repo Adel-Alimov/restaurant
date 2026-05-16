@@ -39,3 +39,8 @@ $("#big-left-arrow").on("click", function () {
     rewiews.scrollLeft -= offsetRewiew + 14;
     $("#big-right-arrow").removeClass("inactive-but");
 });
+
+$("#show-more").on("click", function () {
+    $(".rewiew").show();
+    $("#show-more").hide();
+});

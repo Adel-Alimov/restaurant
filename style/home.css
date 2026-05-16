@@ -92,8 +92,7 @@
     margin-right: 0.781vw;
 }
 
-#right-arrow,
-#right-arrow-mob {
+#right-arrow {
     transform: scale(-1, 1);
 }
 
@@ -136,7 +135,7 @@
     padding-top: 1.852vh;
     padding-left: 0.781vw;
     padding-right: 1.563vw;
-    min-width: 600px;
+    min-width: calc(43vw - 65px);
 }
 
 .rewiew:not(:last-child) {
@@ -144,8 +143,8 @@
 }
 
 .rewiew-left > img {
-    width: 104px;
-    height: 104px;
+    width: 6vw;
+    height: 6vw;
     border-radius: 50%;
 }
 
@@ -157,7 +156,7 @@
 
 .rewiew-top {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .title-rewiew {
@@ -174,12 +173,23 @@
     align-items: center;
 }
 
+.rewiew-star > img {
+    width: 3vw;
+}
+
 .rewiew-text {
     font-size: 1.667vh;
 }
 
-#rewiews-mob {
+#show-more {
     display: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-family: var(--pt);
+    width: 204px;
+    height: 55px;
+    border-radius: 100px;
+    margin: 0 auto;
 }
 
 .full {
@@ -238,6 +248,12 @@ footer {
     justify-content: flex-end;
     gap: 0.781vw;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .rewiew-top {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -299,20 +315,30 @@ footer {
         border-radius: 10px;
     }
     /*=======rewiew=====*/
-    #rewiews {
+    /* #rewiews {
         display: none;
+    } */
+
+    #rewiew-people {
+        flex-direction: column;
     }
-    #rewiews-mob {
-        display: flex;
-        height: 70vh;
-        background-image: url("../assets/img/img/page-bckg.png");
+    #big-left-arrow,
+    #big-right-arrow {
+        visibility: hidden;
+    }
+    #rewiew-people .rewiew:not(:first-child) {
+        display: none;
     }
     .rewiew {
         padding-left: 3vw;
         padding-right: 5.555vw;
+        margin-bottom: 20px;
     }
     .rewiew-top {
         flex-direction: column;
+    }
+    #show-more {
+        display: block;
     }
     /*========contact=======*/
     .contact {
