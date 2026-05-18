@@ -29,6 +29,80 @@
 
 .stock {
     margin-top: 1.852vh;
+    display: none;
+}
+
+#stock {
+    display: none;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    width: 40vw;
+    height: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vh;
+    text-align: center;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    max-height: 15vh;
+}
+
+#stock .stock-top {
+    background-image: url("../assets/img/img/home-bckg.png");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 625/350;
+    max-height: 15vh;
+}
+
+.stock-name,
+.stock-close {
+    color: var(--white);
+}
+
+#stock h3,
+.stock-close {
+    font-size: 22px;
+    font-family: var(--bn);
+}
+
+#stock .stock-close {
+    text-align: right;
+}
+
+#stock p {
+    margin: 0 auto;
+    width: 30vw;
+    font-size: 14px;
+}
+
+#stock a {
+    width: 263px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#open-special-offer {
+    position: fixed;
+    left: 30px;
+    bottom: 50px;
+    z-index: 50;
+    width: 10vw;
+    height: 10vw;
+    border-radius: calc(10vw / 2);
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 /*================GALLERY==========*/
@@ -165,7 +239,7 @@
 
 .rewiew-name > h1 {
     color: #000 !important;
-    font-size: 4.622vh;
+    font-size: 2.622vw;
 }
 
 .rewiew-star {
@@ -270,6 +344,9 @@ footer {
         font-size: 5.556vh;
         font-weight: 400;
     }
+    .stock {
+        display: block;
+    }
     /*=======gallery======*/
     #gallery {
         margin-bottom: 50px;
@@ -318,7 +395,6 @@ footer {
     /* #rewiews {
         display: none;
     } */
-
     #rewiew-people {
         flex-direction: column;
     }
@@ -330,6 +406,7 @@ footer {
         display: none;
     }
     .rewiew {
+        flex-direction: column;
         padding-left: 3vw;
         padding-right: 5.555vw;
         margin-bottom: 20px;
@@ -337,8 +414,15 @@ footer {
     .rewiew-top {
         flex-direction: column;
     }
+    .rewiew-left > img {
+        width: 10vw;
+        height: 10vw;
+    }
     #show-more {
         display: block;
+    }
+    #open-special-offer {
+        display: none;
     }
     /*========contact=======*/
     .contact {

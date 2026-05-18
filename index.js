@@ -44,3 +44,15 @@ $("#show-more").on("click", function () {
     $(".rewiew").show();
     $("#show-more").hide();
 });
+
+$("#stock-button").on("click", function () {
+    $("#stock").show();
+});
+
+$("#stock .stock-close").on("click", function () {
+    $("#stock").hide();
+});
+
+$("#open-special-offer").on("click", function () {
+    $("#stock").show();
+});
