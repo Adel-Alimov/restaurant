@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Меню</title>
+        <link rel="stylesheet" href="../style/common.css" />
+        <link rel="stylesheet" href="../style/fonts.css" />
+        <link rel="stylesheet" href="../style/colors.css" />
+        <link rel="stylesheet" href="../style/menu.css" />
+    </head>
+    <body>
+        <div class="container" id="container">
+            <section class="header">
+                <nav class="head-content">
+                    <h1>ЭКЛЕКТИКА</h1>
+                    <div id="menu-container-full">
+                        <ul class="menu-container-list">
+                            <li class="menu-container-item">
+                                <a href="../index.html">Главная</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="#container" class="inactive">Меню</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="../contact/index.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+            <nav class="mobile-nav">
+                <h1>ЭКЛЕКТИКА</h1>
+                <details>
+                    <summary></summary>
+                    <div id="menu-container">
+                        <ul class="menu-container-list">
+                            <li class="menu-container-item">
+                                <a href="../index.html">Главная</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="#container" class="inactive">Меню</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="../contact/index.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </nav>
+        </div>
+
+        <template id="menuItemCard">
+            <figure class="menuItem">
+                <img class="menuItemPic" src />
+                <div class="bottom">
+                    <figcaption>
+                        <p class="menuItemName"></p>
+                        <p class="menuItemPrice"></p>
+                    </figcaption>
+                    <p class="detailsButton" data-details="" data-kcal="">Подробнее</p>
+                </div>
+            </figure>
+        </template>
+
+        <div id="top-menus">
+            <div id="menu-categories">
+                <a href="?category=mainCourse"
+                    ><button data-cat="mainCourse" class="menu-button" disabled>
+                        Основные блюда
+                    </button></a
+                >
+                <a href="?category=salad"
+                    ><button data-cat="salad" class="menu-button">Закуски и салаты</button></a
+                >
+                <a href="?category=desert"
+                    ><button data-cat="desert" class="menu-button">Десерты</button></a
+                >
+            </div>
+            <div id="booking" class="orange-button"><a href="#">Онлайн бронирование</a></div>
+        </div>
+        <main id="menu">
+            <div class="main-food"></div>
+            <div id="detailsWindow">
+                <div id="detailsClose">X</div>
+                <h3 id="detailsTitle"></h3>
+                <div id="detailsKcal"></div>
+                <div id="detailsPrice"></div>
+                <div id="detailsInfo"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-left">
+                <h3>ЭКЛЕКТИКА</h3>
+            </div>
+            <div class="footer-right">
+                <div class="social">
+                    <p>Следите за нами в соцсетях</p>
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="../assets/svg/svg/tg.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="../assets/svg/svg/vk.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="../assets/svg/svg/dzen.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="../assets/svg/svg/youtube.svg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="booking-mob orange-button"><a href="#">Онлайн бронирование</a></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <script src="menu.js"></script>
+    </body>
+</html>

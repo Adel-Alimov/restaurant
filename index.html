@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ресторан Эклектика</title>
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Сайт ресторана Эклектика" />
+        <meta
+            name="description"
+            content="Сайт ресторана Эклектика, здесь вы можете посмотреть блюда, которые у нас есть и забронировать столик"
+        />
+        <meta
+            property="og:description"
+            content="Просмотр сайта ресторина и возможность бронирования столика"
+        />
+        <meta name="keywords" content="Ресторан, Эклектика, еда, бронирование" />
+        <meta property="og:image" content="ресторан\assets\gallery\gallery\gallery_about.png" />
+        <meta property="og:image:alt" content="Изображение столов в ресторане" />
+        <meta name="robots" content="index, follow" />
+        <link rel="stylesheet" href="style/colors.css" />
+        <link rel="stylesheet" href="style/common.css" />
+        <link rel="stylesheet" href="style/fonts.css" />
+        <link rel="stylesheet" href="style/home.css" />
+    </head>
+    <body tabindex="0">
+        <div class="container" id="container">
+            <section class="header">
+                <nav class="head-content">
+                    <h1>ЭКЛЕКТИКА</h1>
+                    <div id="menu-container-full">
+                        <ul class="menu-container-list">
+                            <li class="menu-container-item">
+                                <a href="#container" class="inactive">Главная</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="menu/index.html">Меню</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="contact/index.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+            <nav class="mobile-nav">
+                <h1>ЭКЛЕКТИКА</h1>
+                <details>
+                    <summary></summary>
+                    <div id="menu-container-full" class="mob">
+                        <ul class="menu-container-list">
+                            <li class="menu-container-item">
+                                <a href="#container" class="inactive">Главная</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="menu/index.html">Меню</a>
+                            </li>
+                            <li class="menu-container-item">
+                                <a href="contact/index.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </nav>
+
+            <template id="rewiewTemplate">
+                <div class="rewiew">
+                    <div class="rewiew-left">
+                        <img src="" alt="" id="rewiew-img" />
+                    </div>
+                    <div class="rewiew-right">
+                        <div class="rewiew-top">
+                            <div class="rewiew-name">
+                                <h1 id="rewiew-people"></h1>
+                            </div>
+                            <div class="rewiew-star" id="rewiew-star"></div>
+                        </div>
+                        <div class="rewiew-bottom">
+                            <div class="rewiew-text">
+                                <p id="rewiew-description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <div id="stock">
+                <div class="stock-top">
+                    <div class="dark">
+                        <div class="stock-close">
+                            <p>X</p>
+                        </div>
+                        <div class="stock-name">
+                            <h3>Акция для двоих</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Приглашаем вас отметить День Святого Валентина в «Эклетике» с особенным подарком
+                    от ресторана! Забронируйте стол на 14 февраля и наслаждайтесь вечером вдвоем с
+                    бесплатной бутылкой шампанского.
+                </p>
+                <p>
+                    Проведите романтический вечер в уютной обстановке и наслаждайтесь вкусом вместе
+                    с «Эклектикой». Резервируйте столы уже сегодня — места ограничены! 💖
+                </p>
+                <a href="#" class="orange-button">Забронировать онлайн</a>
+            </div>
+            <main id="intro">
+                <div class="title-intro">
+                    <h1>Ресторан «ЭКЛЕКТИКА»</h1>
+                </div>
+                <div class="booking">
+                    <a href="#" class="orange-button">Забронировать онлайн</a>
+                </div>
+                <div class="stock">
+                    <button class="stock-button" id="stock-button">Акция</button>
+                </div>
+            </main>
+        </div>
+
+        <button id="open-special-offer">Акция</button>
+
+        <section id="gallery">
+            <div class="rest-gallery">
+                <div class="left-gallery gal-img">
+                    <div class="buttons buttons-mob">
+                        <button id="left-arrow-mob" class="arrow" disabled>
+                            <img src="assets/svg/svg/left-arrow.svg" alt="" />
+                        </button>
+                        <button id="right-arrow-mob" class="arrow">
+                            <img src="assets/svg/svg/left-arrow.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+
+                <div class="right-gallery item-gallery">
+                    <h1 class="title-gallery"></h1>
+                    <p class="text-gallery"></p>
+                    <div class="buttons">
+                        <button id="left-arrow" class="arrow" disabled>
+                            <img src="assets/svg/svg/left-arrow.svg" alt="" />
+                        </button>
+                        <button id="right-arrow" class="arrow">
+                            <img src="assets/svg/svg/left-arrow.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rewiews">
+            <div class="title-rewiew">
+                <h1>Отзывы</h1>
+            </div>
+            <div class="item-rewiew">
+                <img
+                    src="assets/svg/svg/big-right-arrow.svg"
+                    alt="Стрелка влево"
+                    id="big-left-arrow"
+                    class="inactive-but"
+                />
+
+                <div class="rewiew-people" id="rewiew-people">
+                    <!-- <div class="rewiew">
+                        <div class="rewiew-left">
+                            <img src="assets/reviews/reviews/reviewNatalya.png" alt="" />
+                        </div>
+                        <div class="rewiew-right">
+                            <div class="rewiew-top">
+                                <div class="rewiew-name">
+                                    <h1>Наталья Иванова</h1>
+                                </div>
+                                <div class="rewiew-star">
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                    <img src="assets/svg/svg/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="rewiew-bottom">
+                                <div class="rewiew-text">
+                                    <p>
+                                        Посетили семейный ресторан вместе с мужем и детьми —
+                                        отличное место для семейного ужина! Обстановка очень уютная,
+                                        а обслуживание выше всяких похвал. Наши дети в восторге от
+                                        детского меню, которое оказалось не только вкусным, но и
+                                        заботливо подготовленным с учетом детских предпочтений.
+                                        Будем рекомендовать всем друзьям и обязательно вернемся.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <img src="assets/svg/svg/big-right-arrow.svg" alt="" id="big-right-arrow" />
+            </div>
+            <button id="show-more">Показать еще</button>
+        </section>
+
+        <section class="contact">
+            <div class="contact-left">
+                <img src="assets/gallery/gallery/contact.png" alt="" />
+            </div>
+            <div class="contact-right">
+                <div class="contact-right-top">
+                    <p><b>Мы открыты</b></p>
+                    <p>
+                        Пн-Чт с 18:00 до 23:00 <br />
+                        Пт с 17:00 до 23:00 <br />
+                        Сб-Вс с 12:00 до 23:00
+                    </p>
+                    <p>
+                        Москва, ул. Ленина, д.11 <br />
+                        +7 (911) 000-00-80
+                    </p>
+                </div>
+                <div class="contact-right-bottom">
+                    <div class="booking">
+                        <a href="#" class="orange-button">Забронировать онлайн</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-left">
+                <h1>ЭКЛЕКТИКА</h1>
+            </div>
+            <div class="footer-right">
+                <div class="social">
+                    <p>Следите за нами в соцсетях</p>
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="assets/svg/svg/tg.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="assets/svg/svg/vk.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="assets/svg/svg/dzen.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="links-item">
+                                <a href="#">
+                                    <img src="assets/svg/svg/youtube.svg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <script src="index.js"></script>
+        <script src="rewiews.js" async="false"></script>
+        <script src="events.js" async="false"></script>
+    </body>
+</html>

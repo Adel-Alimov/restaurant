@@ -1,0 +1,436 @@
+/*==========HEADER=========*/
+.container {
+    height: 99vh;
+    width: 100vw;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/img/home-bckg.png");
+}
+
+#intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-intro {
+    display: flex;
+    text-align: center;
+    width: 40.469vw;
+    margin-top: 20vh;
+}
+
+.title-intro > h1 {
+    font-size: 8.889vh;
+    font-weight: 400;
+}
+
+.stock {
+    margin-top: 1.852vh;
+    display: none;
+}
+
+#stock {
+    display: none;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    width: 40vw;
+    height: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vh;
+    text-align: center;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    max-height: 15vh;
+}
+
+#stock .stock-top {
+    background-image: url("../assets/img/img/home-bckg.png");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 625/350;
+    max-height: 15vh;
+}
+
+.stock-name,
+.stock-close {
+    color: var(--white);
+}
+
+#stock h3,
+.stock-close {
+    font-size: 22px;
+    font-family: var(--bn);
+}
+
+#stock .stock-close {
+    text-align: right;
+}
+
+#stock p {
+    margin: 0 auto;
+    width: 30vw;
+    font-size: 14px;
+}
+
+#stock a {
+    width: 263px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#open-special-offer {
+    position: fixed;
+    left: 30px;
+    bottom: 50px;
+    z-index: 50;
+    width: 10vw;
+    height: 10vw;
+    border-radius: calc(10vw / 2);
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/*================GALLERY==========*/
+#gallery {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 500px;
+}
+
+.rest-gallery {
+    display: flex;
+    width: 100%;
+}
+
+.left-gallery {
+    width: 50%;
+    position: relative;
+}
+
+.right-gallery {
+    width: 50%;
+    max-width: 26.302vw;
+    margin: 0 auto;
+    margin-top: 2.778vh;
+}
+
+.gal-img {
+    background-image: url("../assets/gallery/gallery/gallery_about.png");
+    height: 100%;
+}
+
+.val-img {
+    background-image: url("../assets/gallery/gallery/gallery_values.png");
+    height: 100%;
+}
+
+.item-gallery h1::after {
+    content: "О нас";
+    color: var(--bg-black);
+}
+
+.item-gallery p::after {
+    content: "Ресторан «Эклектика» — это место, где сочетаются утонченный вкус и теплая атмосфера. Наши шеф-повара тщательно подбирают ингредиенты и создают блюда с любовью к каждому клиенту.\A\A«Эклектика» предлагает уютные залы для семейных ужинов, романтических свиданий и деловых обедов. Мы ценим ваше время и комфорт, поэтому обеспечиваем высокий уровень сервиса. \A\AДобро пожаловать в мир великолепных вкусов и неповторимых воспоминаний.";
+}
+
+.item-values h1::after {
+    content: "Наши ценности";
+    color: var(--bg-black);
+}
+
+.item-values p::after {
+    content: "«Эклектика» — это уютное место, где каждый гость становится частью нашей семьи. Мы гордимся тем, что создали атмосферу, в которой сочетается элегантность и теплота, а меню предлагает богатство вкусов, подчеркивая лучшие кулинарные традиции мира.\A\AРесторан «Эклектика» — это не просто еще одно место для обеда. Это место, где сливаются воедино стиль, вкус и теплота, создавая неповторимый опыт для тех, кто ценит настоящую гастрономию.";
+}
+
+.title-gallery > h1 {
+    color: #000000 !important;
+}
+
+.arrow:not(:last-child) {
+    margin-right: 0.781vw;
+}
+
+#right-arrow {
+    transform: scale(-1, 1);
+}
+
+#rewiews {
+    display: flex;
+    flex-direction: column;
+    /* height: 70vh; */
+    background-image: url("../assets/img/img/page-bckg.png");
+}
+
+.item-rewiew {
+    display: flex;
+    margin-left: 2.604vw;
+    margin-bottom: 50px;
+}
+
+#big-left-arrow {
+    transform: scale(-1, 1);
+}
+
+#big-left-arrow,
+#big-right-arrow {
+    cursor: pointer;
+}
+
+.buttons-mob {
+    display: none;
+}
+
+.rewiew-people {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.rewiew {
+    background-color: #fff;
+    display: flex;
+    min-height: 29.537vh;
+    padding-top: 1.852vh;
+    padding-left: 0.781vw;
+    padding-right: 1.563vw;
+    min-width: calc(43vw - 65px);
+}
+
+.rewiew:not(:last-child) {
+    margin-right: 1.042vw;
+}
+
+.rewiew-left > img {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+}
+
+.rewiew-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.042vw;
+}
+
+.rewiew-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-rewiew {
+    margin-left: 7.813vw;
+}
+
+.rewiew-name > h1 {
+    color: #000 !important;
+    font-size: 2.622vw;
+}
+
+.rewiew-star {
+    display: flex;
+    align-items: center;
+}
+
+.rewiew-star > img {
+    width: 3vw;
+}
+
+.rewiew-text {
+    font-size: 1.667vh;
+}
+
+#show-more {
+    display: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-family: var(--pt);
+    width: 204px;
+    height: 55px;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.full {
+    margin-top: 5.555vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*======contact======*/
+.contact {
+    display: flex;
+    width: 100%;
+}
+
+.contact-left,
+.contact-right {
+    width: 50%;
+}
+
+.contact-left > img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-right-top {
+    width: 50%;
+}
+
+.contact-right-top > h1 {
+    color: #000;
+}
+
+footer {
+    display: flex;
+    background-color: var(--bg-black);
+    color: var(--white);
+    justify-content: space-around;
+}
+
+.footer-left > h1,
+.social > p {
+    font-size: 2.407vh;
+}
+
+.links-list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 0.781vw;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .rewiew-top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        background-image: url("../assets/img/img/page-bckg.png");
+    }
+    /*=====title======*/
+    .title-intro {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .title-intro > h1 {
+        font-size: 5.556vh;
+        font-weight: 400;
+    }
+    .stock {
+        display: block;
+    }
+    /*=======gallery======*/
+    #gallery {
+        margin-bottom: 50px;
+        height: 700px;
+    }
+    .rest-gallery {
+        flex-direction: column;
+    }
+    .left-gallery,
+    .right-gallery {
+        width: 100%;
+    }
+
+    .right-gallery {
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gal-img {
+        object-fit: contain;
+    }
+
+    .text-gallery {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .buttons {
+        display: none;
+    }
+    .buttons-mob {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+    .arrow {
+        border-radius: 10px;
+    }
+    /*=======rewiew=====*/
+    /* #rewiews {
+        display: none;
+    } */
+    #rewiew-people {
+        flex-direction: column;
+    }
+    #big-left-arrow,
+    #big-right-arrow {
+        visibility: hidden;
+    }
+    #rewiew-people .rewiew:not(:first-child) {
+        display: none;
+    }
+    .rewiew {
+        flex-direction: column;
+        padding-left: 3vw;
+        padding-right: 5.555vw;
+        margin-bottom: 20px;
+    }
+    .rewiew-top {
+        flex-direction: column;
+    }
+    .rewiew-left > img {
+        width: 10vw;
+        height: 10vw;
+    }
+    #show-more {
+        display: block;
+    }
+    #open-special-offer {
+        display: none;
+    }
+    /*========contact=======*/
+    .contact {
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+}

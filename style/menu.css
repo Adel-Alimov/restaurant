@@ -1,0 +1,171 @@
+body {
+    background-image: url("../assets/img/img/page-bckg.png");
+}
+
+#top-menus {
+    margin-bottom: 4.63vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-categories {
+    margin-left: 7.813vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.042vw;
+    margin-top: 20vh;
+}
+
+.menu-button {
+    height: 4.259vh;
+    width: 11.198vw;
+    font-size: 1.852vh;
+    font-family: var(--pt);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+#booking {
+    position: fixed;
+    right: 0;
+    margin-top: 20vh;
+    font-size: 2.222vh;
+    width: 10.417vw;
+    height: 8.611vh;
+    padding-left: 1.042vw;
+}
+
+#booking > a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#menu {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.menuItem {
+    width: 30.729vw;
+    height: 61.259vh;
+    background-color: var(--white);
+}
+
+.menuItem > img {
+    width: 30.729vw;
+    height: 42.87vh;
+}
+
+figcaption {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 7.407vh;
+    margin-bottom: 2.852vh;
+}
+
+.menuItemName {
+    width: 80%;
+    margin-left: 1.042vw;
+}
+
+.menuItemPrice {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.042vw;
+}
+
+.detailsButton {
+    background-color: var(--orange);
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.389vh 1.563vw;
+    text-align: center;
+    font-size: 2.565vh;
+    color: var(--white);
+    border-radius: 16px;
+}
+
+.detailsButton:hover {
+    background-color: var(--orange-hov);
+}
+
+.booking-mob {
+    display: none;
+}
+
+#detailsWindow {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 30.729vw;
+    height: 61.259vh;
+    background-color: var(--white);
+    z-index: 2;
+    padding: 15px;
+}
+
+#detailsClose {
+    display: flex;
+    justify-content: right;
+}
+
+#detailsTitle {
+    font-family: var(--pt);
+    margin-bottom: 0;
+}
+
+#detailsKcal {
+    color: var(--grey);
+    font-size: 0.9vw;
+    margin-bottom: 1vw;
+}
+
+#detailsPrice {
+    font-family: var(--pt);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 900px) {
+    #menu-categories {
+        flex-direction: column;
+    }
+    .menu-button {
+        width: 32vw;
+    }
+    #booking {
+        width: 25vw;
+        height: 25vw;
+        font-size: 1.555vh;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .main-food {
+        grid-template-columns: 1fr;
+    }
+    .menuItem,
+    .menuItem > img {
+        width: 70vw;
+    }
+    .booking-mob {
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+    .booking-mob > a {
+        text-decoration: none;
+        color: var(--white);
+    }
+}
